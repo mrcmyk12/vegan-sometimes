@@ -107,7 +107,7 @@
 				<h2 style="font-weight: 800; color: #706b32">Instructions</h2>
 			</div>
 			<div class="row"  style="margin-bottom: 30px; margin-left: 15px; margin-right: 20px">
-				<h5 style="font-weight: 700; color: #706b32"><?php the_field('instructions') ?></h5>
+				<h3 style="font-weight: 500; color: #706b32"><?php the_field('instructions') ?></h3>
 			</div>
 			<div class="row">
 				<h2 style="font-weight: 800; color: #706b32">Related Recipes</h2>
@@ -131,7 +131,7 @@
 						</div>
 						<div class="col" >
                             <h3 style="margin-top: 10px; font-weight: 600; color: #706b32"><?php the_title(); ?></h3>
-							<p style="margin-bottom: 5px; font-weight: 500; color: #4929A3"
+							<p style="margin-bottom: 5px; font-weight: 500; color: #706b32"
 								> <?php the_field('description'); ?></p
 							>
 						</div>

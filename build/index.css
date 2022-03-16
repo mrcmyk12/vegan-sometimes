@@ -137,6 +137,87 @@ box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
 	flex-grow: 0;
 	margin: 0px 10px;
 }
+.Button-Primary-L-Lunch {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #3B1349;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Dinner {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #004AA8;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Snack {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #125B66;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
 
 .Button-Primary-XL {
 	/* Button-Primary-XL */
@@ -574,7 +655,7 @@ h6 {
 }
 
 .nav-link :hover {
-	color: #6E2375;
+	color: white;
 }
 
 .Nav-Search {
