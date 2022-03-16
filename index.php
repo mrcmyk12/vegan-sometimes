@@ -33,19 +33,23 @@
 								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4>Snacks</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#"><h4>Juices</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/juices') ?>"><h4>Juices</h4></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4>Smoothies</h4></a>
 							</li>
 							<li>
 								<form class="d-flex">
+									<div class="input-group input-group-sm">
 									<input
-										class="Nav-Search"
-										type="search"
+										class="form-control"
+										type="text"
 										placeholder="Search Recipes"
 										aria-label="Search"
+										style=""
 									/>
+									<button class="btn btn-primary" style="background: #6E2375" type="button" id="search-button">Search</button>
+									</div>
 								</form>
 							</li>
 						</ul>
@@ -188,7 +192,7 @@
 		<?php
         $latestPosts = new WP_Query(array(
             'posts_per_page' => 2, 
-            'post_type' => array('breakfast','lunch','dinner','snack','juice','smoothie') 
+            'post_type' => array('breakfast','lunch','dinner','snack','juices','smoothies') 
         )); 
         
         while($latestPosts -> have_posts()) { 

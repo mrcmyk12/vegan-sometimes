@@ -4,7 +4,7 @@
 		<div style="background-color: #F4AE2F">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
-					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: #004AA8; font-weight: 900">vegan-sometimes</h2></a>
+					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: #7D5916; font-weight: 900">vegan-sometimes</h2></a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -22,32 +22,34 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h4  style="color:#004AA8">Breakfast</h4></a>
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h4  style="color:#7D5916">Breakfast</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h4 style="color:#004AA8">Lunch</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h4 style="color:#7D5916">Lunch</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3 style="color:#004AA8; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Dinner</b></h3></a>
+								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3 style="color:#7D5916; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Dinner</b></h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4 style="color:#004AA8">Snacks</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4 style="color:#7D5916">Snacks</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/juices"><h4 style="color:#004AA8">Juices</h4></a>
+								<a class="nav-link" href="/juices"><h4 style="color:#7D5916">Juices</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#004AA8">Smoothies</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#7D5916">Smoothies</h4></a>
 							</li>
 							<li>
-								<form class="d-flex">
+							<div class="input-group input-group-sm">
 									<input
-										class="Nav-Search"
-										type="search"
+										class="form-control"
+										type="text"
 										placeholder="Search Recipes"
 										aria-label="Search"
+										style=""
 									/>
-								</form>
+									<button class="btn btn-primary" style="background: #7D5916" type="button" id="search-button">Search</button>
+									</div>
 							</li>
 						</ul>
 					</div>
@@ -56,9 +58,9 @@
 		</div>
         <div class="container">
 			<div class="row" style="margin-top: 30px">
-				<h1 style="color: #004AA8; font-weight: 900; font-size: 50px;  text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b><?php the_title(); ?><b></h1></b>
+				<h1 style="color: #7D5916; font-weight: 900; font-size: 50px;  text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b><?php the_title(); ?><b></h1></b>
 
-				<h1 style="color: #004AA8; font-weight: 700">Recipe of the Day:</h1>
+				<h1 style="color: #7D5916; font-weight: 700">Recipe of the Day:</h1>
             <?php 
                 $topRecipe = new WP_Query(array(
                    'posts_per_page' => 1,
@@ -69,11 +71,11 @@
                 while($topRecipe -> have_posts()){
                     $topRecipe -> the_post();?>
 
-<h2 style="color: #004AA8"><?php the_title(); ?></h2>
+<h2 style="color: #7D5916"><?php the_title(); ?></h2>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<h3 style="color: #004AA8"><?php the_field('ingredients_row_1') ?></h3>
+					<h3 style="color: #7D5916"><?php the_field('ingredients_row_1') ?></h3>
                     <a href="<?php the_permalink(); ?>"><button type="button" style="margin-top: 25px; margin-bottom: 25px" class="Button-Primary-L-Dinner">View Recipe</button></a>
 				</div>
                 <div class="col-md-6">
@@ -101,10 +103,10 @@
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <h2 style="color: #004AA8; font-weight: 600"><?php the_title(); ?></h2>
+                        <h2 style="color: #7D5916; font-weight: 600"><?php the_title(); ?></h2>
                     </div>
                     <div class="row">
-                       <h4 style="color: #004AA8"><?php the_field('ingredients_row_1') ?></h4>
+                       <h4 style="color: #7D5916"><?php the_field('ingredients_row_1') ?></h4>
                     </div>
                 </div>
                 <div class="col-md-3" style="align-items: start;">

@@ -4,7 +4,7 @@
 		<div style="background-color: #F4AE2F">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid" style="color: #ece6d4">
-					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: #004AA8; font-weight: 900">vegan-sometimes</h2></a>
+					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: #7D5916; font-weight: 900">vegan-sometimes</h2></a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -22,32 +22,34 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h4 style="color:#004AA8">Breakfast</h4></a>
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h4 style="color:#7D5916">Breakfast</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h4 style="color:#004AA8">Lunch</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h4 style="color:#7D5916">Lunch</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3   style="color:#004AA8; text-shadow: 8px 4px 4px rgba(0,0,0,0.15)"><b>Dinner</b></h3></a>
+								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3   style="color:#7D5916; text-shadow: 8px 4px 4px rgba(0,0,0,0.15)"><b>Dinner</b></h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4 style="color:#004AA8">Snacks</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4 style="color:#7D5916">Snacks</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/juices"><h4 style="color:#004AA8">Juices</h4></a>
+								<a class="nav-link" href="/juices"><h4 style="color:#7D5916">Juices</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#004AA8">Smoothies</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#7D5916">Smoothies</h4></a>
 							</li>
 							<li>
-								<form class="d-flex">
+							<div class="input-group input-group-sm">
 									<input
-										class="Nav-Search"
-										type="search"
+										class="form-control"
+										type="text"
 										placeholder="Search Recipes"
 										aria-label="Search"
+										style=""
 									/>
-								</form>
+									<button class="btn btn-primary" style="background: #7D5916" type="button" id="search-button">Search</button>
+									</div>
 							</li>
 						</ul>
 					</div>
@@ -61,27 +63,27 @@
 <div class="container">
 			<div class="row" style="margin-top: 15px">
 				<div class="col-7">
-					<h1 style="font-weight: 900; font-size: 50px;  color:#004AA8; text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h1>
+					<h1 style="font-weight: 900; font-size: 50px;  color:#7D5916; text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h1>
 				</div>
 				<div class="col-7">
 					<div class="row" style="margin-top: 25px">
 						<div class="col">
-							<p class="Body-L" style="color: #004AA8"
+							<p class="Body-L" style="color: #7D5916"
 								><b>Prep: <?php the_field('prep_time') ?></b></p
 							>
 						</div>
 						<div class="col">
-							<p class="Body-L" style="color: #004AA8"
+							<p class="Body-L" style="color: #7D5916"
 								><b>Cook: <?php the_field('cook_time') ?></b></p
 							>
 						</div>
 						<div class="col">
-							<p class="Body-L" style="color: #004AA8"
+							<p class="Body-L" style="color: #7D5916"
 								><b>Total: <?php the_field('total_time') ?></b></p
 							>
 						</div>
 						<div class="col">
-							<p class="Body-L" style="color: #004AA8"
+							<p class="Body-L" style="color: #7D5916"
 								><b>Servings: <?php the_field('servings') ?></b></p
 							>
 						</div>
@@ -92,10 +94,10 @@
 				<div class="col-7">
 					<div class="row">
 						<div class="col">
-							<h4  style="font-weight: 600; color: #004AA8"><?php the_field('ingredients_row_1') ?></h4>
+							<h4  style="font-weight: 600; color: #7D5916"><?php the_field('ingredients_row_1') ?></h4>
 						</div>
 						<div class="col">
-                        <h4  style="font-weight: 600; color: #004AA8"><?php the_field('ingredients_row_2') ?></h4>
+                        <h4  style="font-weight: 600; color: #7D5916"><?php the_field('ingredients_row_2') ?></h4>
 						</div>
 					</div>
 				</div>
@@ -104,13 +106,13 @@
 				</div>
 			</div>
 			<div class="row" style="margin-bottom: 15px">
-				<h2 style="font-weight: 800; color: #004AA8">Instructions</h2>
+				<h2 style="font-weight: 800; color: #7D5916">Instructions</h2>
 			</div>
 			<div class="row"  style="margin-bottom: 30px; margin-left: 15px; margin-right: 20px">
-				<h3 style="font-weight: 500; color: #004AA8"><?php the_field('instructions') ?></h3>
+				<h3 style="font-weight: 500; color: #7D5916"><?php the_field('instructions') ?></h3>
 			</div>
 			<div class="row">
-				<h2 style="font-weight: 800; color: #004AA8">Related Recipes</h2>
+				<h2 style="font-weight: 800; color: #7D5916">Related Recipes</h2>
 			</div>
             <div class="row" style="margin-bottom: 20px">
             <?php
@@ -130,8 +132,8 @@
                             <?php the_post_thumbnail('cardImage'); ?>
 						</div>
 						<div class="col" >
-                            <h3 style="margin-top: 10px; font-weight: 600; color: #004AA8"><?php the_title(); ?></h3>
-							<p style="margin-bottom: 5px; font-weight: 500; color: #004AA8"
+                            <h3 style="margin-top: 10px; font-weight: 600; color: #7D5916"><?php the_title(); ?></h3>
+							<p style="margin-bottom: 5px; font-weight: 500; color: #7D5916"
 								> <?php the_field('description'); ?></p
 							>
 						</div>
