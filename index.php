@@ -39,18 +39,7 @@
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4>Smoothies</h4></a>
 							</li>
 							<li>
-								<form class="d-flex">
-									<div class="input-group input-group-sm">
-									<input
-										class="form-control"
-										type="text"
-										placeholder="Search Recipes"
-										aria-label="Search"
-										style=""
-									/>
-									<button class="btn btn-primary" style="background: #6E2375" type="button" id="search-button">Search</button>
-									</div>
-								</form>
+									<button class="btn btn-primary" style="background: #6E2375" type="button" id="search-button" data-bs-toggle="modal" data-bs-target="#searchModal">Search</button>
 							</li>
 						</ul>
 					</div>
@@ -69,17 +58,8 @@
                     Sometimes I'm Vegan...Sometimes I'm not.  But I am always conscious of what I am putting in my body.  Love animals, and love yourself.  It's not about being perfect.  Browse our Vegan recipes to begin your Vegan journey.
 				</p>
 			</div>
-			<div class="row" style="margin-top: 25px">
-				<form>
-					<input
-						type="search"
-						class="Search-Bar"
-						placeholder='Search by Ingredient (i.e "Avocado"), Meal-Type (i.e "Dinner"), or Food-Type (i.e "Pasta")'
-					/>
-				</form>
-			</div>
 			<div class="row" style="margin-top: 25px; margin-bottom: 50px;">
-				<button class="Button-Primary-L">Search</button>
+				<button id="search-button" data-bs-toggle="modal" data-bs-target="#searchModal" class="Button-Primary-L-Wide">Search Recipes</button>
 			</div>
 		</div>
 		<div class="col-md-6" style="margin-top: 50px">
@@ -218,6 +198,27 @@
 		</div>
 		<?php  }
             ?>
+	</div>
+	<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="SearchModal" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title">Search Recipes</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="input-group input-group-md">
+							<input type="text" id="search-term" class="form-control" aria-label="Recipe search input" aria-describedby="Recipe Search Input">
+							<button class="btn " type="submit" id="button-addon2" style="background:#6E2375; color: white;">Search</button>
+						</div>
+						<div class="modal_results">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<?php get_footer(); ?></div
