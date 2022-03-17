@@ -40,14 +40,7 @@
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#706B32">Smoothies</h4></a>
 							</li>
 							<li>
-								<form class="d-flex">
-									<input
-										class="Nav-Search"
-										type="search"
-										placeholder="Search Recipes"
-										aria-label="Search"
-									/>
-								</form>
+							<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>

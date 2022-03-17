@@ -40,16 +40,7 @@
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h3 style="color:#4C5711; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Smoothies</b></h3></a>
 							</li>
 							<li>
-							<div class="input-group input-group-sm">
-									<input
-										class="form-control"
-										type="text"
-										placeholder="Search Recipes"
-										aria-label="Search"
-										style=""
-									/>
-									<button class="btn btn-primary" style="background: #706B32" type="button" id="search-button">Search</button>
-									</div>
+							<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>

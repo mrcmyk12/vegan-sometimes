@@ -820,3 +820,33 @@ hr{
 	border: 1px solid;
 	color: #6E2375;
 }
+
+.search-overlay{
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 110;
+	position: fixed;
+	background-color: rgba(255,255,255,0.96);
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.09);
+	transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+	box-sizing: border-box;
+}
+
+.search-overlay___top{
+	background-color: rgba(0,0,0,0.12);
+}
+
+.search-term{
+	width: 75%;
+	box-sizing: border-box;
+	border: none;
+	padding: 15px 0;
+	margin: 0;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: 300;
+	outline: none;
+	color: #6E2375;
+}

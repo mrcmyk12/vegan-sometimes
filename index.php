@@ -39,7 +39,7 @@
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4>Smoothies</h4></a>
 							</li>
 							<li>
-									<button class="btn btn-primary" style="background: #6E2375" type="button" id="search-button" data-bs-toggle="modal" data-bs-target="#searchModal">Search</button>
+								<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>
@@ -57,9 +57,6 @@
 				<p class="Body-L-Bold" style="line-height: 30px;">
                     Sometimes I'm Vegan...Sometimes I'm not.  But I am always conscious of what I am putting in my body.  Love animals, and love yourself.  It's not about being perfect.  Browse our Vegan recipes to begin your Vegan journey.
 				</p>
-			</div>
-			<div class="row" style="margin-top: 25px; margin-bottom: 50px;">
-				<button id="search-button" data-bs-toggle="modal" data-bs-target="#searchModal" class="Button-Primary-L-Wide">Search Recipes</button>
 			</div>
 		</div>
 		<div class="col-md-6" style="margin-top: 50px">
@@ -199,6 +196,7 @@
 		<?php  }
             ?>
 	</div>
+
 	<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="SearchModal" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
@@ -208,11 +206,8 @@
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="input-group input-group-md">
-							<input type="text" id="search-term" class="form-control" aria-label="Recipe search input" aria-describedby="Recipe Search Input">
-							<button class="btn " type="submit" id="button-addon2" style="background:#6E2375; color: white;">Search</button>
-						</div>
-						<div class="modal_results">
+						<?php get_search_form(); ?>
+					<div class="modal_results">
 
 						</div>
 					</div>
