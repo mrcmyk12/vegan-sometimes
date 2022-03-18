@@ -55,7 +55,9 @@
 			</div>
 			<div class="row" style="margin-top: 25px">
 				<p class="Body-L-Bold" style="line-height: 30px;">
-                    Sometimes I'm Vegan...Sometimes I'm not.  But I am always conscious of what I am putting in my body.  Love animals, and love yourself.  It's not about being perfect.  Browse our Vegan recipes to begin your Vegan journey.
+                    Sometimes I'm Vegan...Sometimes I'm not.  But you can always be conscious of what you're 
+					consuming.  It's not about being perfect.  Just eating one vegan meal a week can make a 
+					huge difference.  Browse our Vegan recipes to begin your Vegan journey.
 				</p>
 			</div>
 		</div>
@@ -162,13 +164,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<h2 style="font-weight: 700">Latest Recipes</h2>
+	<div class="row" style="margin-top: 75px; margin-bottom: 75px;">
+		<h2 style="font-weight: 700; font-size: 50px;">Latest Recipes</h2>
 	</div>
 	<div class="row" style="margin-bottom: 20px">
 		<?php
         $latestPosts = new WP_Query(array(
-            'posts_per_page' => 2, 
+            'posts_per_page' => 10, 
             'post_type' => array('breakfast','lunch','dinner','snack','juices','smoothies') 
         )); 
         
@@ -176,7 +178,29 @@
             
         $latestPosts -> the_post();?>
 
-		<div class="col-md-6" style="margin-bottom: 25px">
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-md-4">
+				<div class="row">
+					<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+						<h1 style="font-weight: 700;"><?php the_title(); ?></h1>
+					</a>
+				</div>
+				<div class="row">
+					<h4><?php the_field('description'); ?></h4>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<h3><?php the_field('ingredients_row_1'); ?></h3>
+			</div>
+			<div class="col-md-4">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail('cardImage'); ?>
+				</a>
+			</div>
+		</div>
+		<hr>
+
+		<!-- <div class="col-md-6" style="margin-bottom: 25px">
             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                 <div class="Latest-Recipe-Card">
                     <div class="row">
@@ -192,28 +216,9 @@
                     </div>
                 </div>
             </a>
-		</div>
+		</div> -->
 		<?php  }
             ?>
-	</div>
-
-	<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="SearchModal" aria-hidden="true">
-		<div class="modal-dialog modal-xl">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title">Search Recipes</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<?php get_search_form(); ?>
-					<div class="modal_results">
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<?php get_footer(); ?></div

@@ -51,7 +51,7 @@
     while(have_posts()){
         the_post(); ?>
 
-<div class="container">
+		<div class="container">
 			<div class="row" style="margin-top: 15px">
 				<div class="col-md-7">
 					<h1 style="font-weight: 900; font-size: 50px;  color:#706B32; text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h1>
@@ -102,10 +102,10 @@
 			<div class="row"  style="margin-bottom: 30px; margin-left: 15px; margin-right: 20px">
 				<h3 style="font-weight: 500; color: #706b32"><?php the_field('instructions') ?></h3>
 			</div>
-			<div class="row">
-				<h2 style="font-weight: 800; color: #706b32">Related Recipes</h2>
+			<div class="row" style="margin-bottom: 50px; margin-top: 30px;">
+				<h2 style="font-weight: 800; color: #706b32; font-size: 50px;">Related Recipes</h2>
 			</div>
-            <div class="row" style="margin-bottom: 20px">
+            
             <?php
                 $latestRecipes = new WP_Query(array(
                     'posts_per_page' => 2,
@@ -115,29 +115,30 @@
                 while($latestRecipes -> have_posts()){
                     $latestRecipes -> the_post(  );
                     ?>
-                	<div class="col-md-6" style="margin-bottom: 20px">
-					<div class="Latest-Recipe-Card">
-                        <a style="text-decoration: none; color: white" href="<?php the_permalink(  ); ?>">
-                        <div class="row">
-						<div class="col">
-                            <?php the_post_thumbnail('cardImage'); ?>
+					
+				<div class="row" style="margin-bottom: 20px;">
+					<div class="col-md-4">
+						<div class="row">
+							<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+								<h1 style="font-weight: 700; color: #706b32"><?php the_title(); ?></h1>
+							</a>
 						</div>
-						<div class="col" >
-                            <h3 style="margin-top: 10px; font-weight: 600; color: #706b32"><?php the_title(); ?></h3>
-							<p style="margin-bottom: 5px; font-weight: 500; color: #706b32"
-								> <?php the_field('description'); ?></p
-							>
-						</div>
-
-                    </div>
-
+						<div class="row">
+							<h4 style="color: #706b32"><?php the_field('description'); ?></h4>
+						</div>	
 					</div>
-                </a>
-
+					<div class="col-md-4">
+						<h3 style="color: #706b32"><?php the_field('ingredients_row_1'); ?></h3>
+					</div>
+					<div class="col-md-4">
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail('cardImage'); ?>
+						</a>
+					</div>
 				</div>
+				<hr>
                <?php }
             ?>
-			</div>
 		</div>
 
    <?php }

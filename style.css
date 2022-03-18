@@ -3,3 +3,856 @@ Theme Name: Vegan Recipe Website
 Author: Philip Sanders
 Version: 1.0
 */
+
+.Button-Primary-S {
+	/* Button-Primary-S */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+
+	background: #6E2375;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 90px;
+	height: 19px;
+	left: calc(50% - 90px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height */
+	text-align: center;
+
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Primary-M {
+	/* Button-Primary-M */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+	position: absolute;
+	width: 144px;
+	height: 36px;
+	left: 310px;
+	top: 314px;
+
+	background: #6E2375;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 116px;
+	height: 24px;
+	left: calc(50% - 116px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Primary-L {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #6E2375;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Wide {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 240px;
+	height: 44px;
+	background: #6E2375;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Breakfast {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #706B32;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Lunch {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #3B1349;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Dinner {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #7D5916;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Snack {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #700045;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Juice {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #125B66;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+.Button-Primary-L-Smoothie {
+	/* Button-Primary-L */
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+
+
+	/* Auto layout */
+	padding: 6px 10px;
+	width: 182px;
+	height: 44px;
+	background: #4C5711;
+	border-radius: 18px;
+
+	/* Call To Action */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Primary-XL {
+	/* Button-Primary-XL */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+	position: absolute;
+	width: 221px;
+	height: 52px;
+	left: 310px;
+	top: 482px;
+
+	background: #6E2375;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 193px;
+	height: 40px;
+	left: calc(50% - 193px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+
+	color: #ffffff;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Secondary-S {
+	/* Button-Secondary-S */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+	position: absolute;
+	width: 118px;
+	height: 31px;
+	left: 648px;
+	top: 239px;
+
+	background: #ffffff;
+	border: 2px solid #6E2375;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 90px;
+	height: 19px;
+	left: calc(50% - 90px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height */
+	text-align: center;
+
+	color: #6E2375;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Secondary-M {
+	/* Button-Secondary-M */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+	position: absolute;
+	width: 144px;
+	height: 36px;
+	left: 648px;
+	top: 314px;
+
+	background: #ffffff;
+	border: 2px solid #6E2375;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 116px;
+	height: 24px;
+	left: calc(50% - 116px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+
+	color: #6E2375;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Secondary-L {
+	/* Button-Secondary-L */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+	position: absolute;
+	width: 182px;
+	height: 44px;
+	left: 648px;
+	top: 394px;
+
+	background: #ffffff;
+	border: 2px solid #6E2375;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 154px;
+	height: 32px;
+	left: calc(50% - 154px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #6E2375;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.Button-Secondary-XL {
+	/* Button-Secondary-XL */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+
+	position: absolute;
+	width: 221px;
+	height: 52px;
+	left: 648px;
+	top: 482px;
+
+	background: #ffffff;
+	border: 2px solid #6E2375;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	/* Call To Action */
+
+	position: static;
+	width: 193px;
+	height: 40px;
+	left: calc(50% - 193px / 2);
+	top: 6px;
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+
+	color: #6E2375;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+h1 {
+	/* Heading 1 */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 43px;
+}
+
+h2 {
+	/* Heading 2 */
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	color: #6E2375;
+}
+
+h3 {
+	/* Heading 3 */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 26px;
+}
+
+h4 {
+	/* Heading 4 */
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+    color: #6E2375;
+}
+
+h5 {
+	/* Heading 5 */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+h6 {
+	/* Heading 6 */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 13px;
+}
+
+.Subheadline-L {
+	/* Subheadline L */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.Subheadline-M {
+	/* Subheadline M */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.Subheadline-S {
+	/* Subheadline S */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.Body-L {
+	/* Body L */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.Body-L-Medium {
+	/* Body L Medium */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.Body-L-Bold {
+	/* Body L Bold */
+
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 23px;
+	color: #6E2375;
+}
+
+.Body-M {
+	/* Body M */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.Body-M-Medium {
+	/* Body M Medium */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.Body-M-Bold {
+	/* Body M Bold */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.Body-S {
+	/* Body S */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.Body-S-Medium {
+	/* Body S Medium */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.Body-S-Bold {
+	/* Body S Bold */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 17px;
+
+}
+
+.Body-XS {
+	/* Body XS */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 13px;
+
+}
+
+.Body-XS-Medium {
+	/* Body XS Medium */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 13px;
+
+}
+
+.Body-XS-Bold {
+	/* Body XS Bold */
+	color: #6E2375;
+	font-family: 'Fredoka';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 13px;
+	color: #6E2375;
+}
+
+.nav-link :hover {
+	color: white;
+}
+
+.Nav-Search {
+	/* Nav-Search */
+
+	position: absolute;
+	width: 235px;
+	height: 20px;
+	background: #ffffff;
+	border: 1px solid #d1a750;
+	box-sizing: border-box;
+	border-radius: 18px;
+	margin-top: 10px;
+    font-family: 'Fredoka';
+    font-weight: 500;
+}
+
+.Nav-Search ::selection {
+	background: #ffffff;
+	border: 1px solid #d1a750;
+}
+
+.navbar-light{
+    color: #ece6d4;
+}
+
+.Search-Bar{
+    /* Search Bar */
+width: 467px;
+height: 33px;
+background: #FFFFFF;
+border-radius: 12px;
+font-size: 13px;
+font-family: 'Fredoka';
+}
+
+.carousel-img{
+    /* carousel-img */
+position: absolute;
+width: 369px;
+height: 365px;
+}
+
+.Latest-Recipe-Card{
+	/* Latest-Recipe-Card */
+width: 472px;
+height: 178px;
+
+/* Description */
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #000000;
+/* Praesent fringilla augue eget elit tincidunt iaculis. Nam a pretium enim. Sed et diam non mauris luctus semper nec dapibus est. Phasellus sed congue eros. */
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #000000;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    color: #6E2375;
+    font-family: 'Fredoka';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+ol li{
+	margin-bottom: 10px;
+}
+
+ol{
+	font-weight: bold;
+}
+
+hr{
+	border: 1px solid;
+	color: #6E2375;
+}
+
+.search-overlay{
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 110;
+	position: fixed;
+	background-color: rgba(255,255,255,0.96);
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.09);
+	transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+	box-sizing: border-box;
+}
+
+.search-overlay___top{
+	background-color: rgba(0,0,0,0.12);
+}
+
+.search-term{
+	width: 75%;
+	box-sizing: border-box;
+	border: none;
+	padding: 15px 0;
+	margin: 0;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: 300;
+	outline: none;
+	color: #6E2375;
+}

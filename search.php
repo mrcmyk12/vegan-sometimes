@@ -59,23 +59,30 @@ Template Name: Search Page
         's' => $s
     ); ?>
     <div class="container">
+		<div class="row" style="margin_bottom: 50px; margin-top: 50px">
+			<?php get_search_form(); ?>
+		</div>
     <?php
     $the_query = new WP_Query( $args );
     if( $the_query -> have_posts()) {
-        _e("<h2>Search results for: ".get_query_var('s')."</h2>");
+        _e("<div style='margin-top: 30px; margin-bottom: 30px'><h2>Search results for: ".get_query_var('s')."</h2></div>");
         while( $the_query -> have_posts()){
             $the_query -> the_post();
             ?>
             <div class="row">
-                <div class="col">
-                    <h1 style="font-weight: 700"><?php the_title(); ?></h1>
-                    <?php the_field('description'); ?>
+                <div class="col-md-4">
+					<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+                    	<h1 style="font-weight: 700"><?php the_title(); ?></h1>
+					</a>
+                    <h4><?php the_field('description'); ?></h4>
                 </div>
-                <div class="col">
-                    <?php the_field('ingredients_row_1'); ?>
+                <div class="col-md-4">
+                    <h3><?php the_field('ingredients_row_1'); ?></h3>
                 </div>
-                <div class="col">
-                    <?php the_post_thumbnail('cardImage') ?>
+                <div class="col-md-4">
+					<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+                    	<?php the_post_thumbnail('cardImage') ?>
+					</a>
                 </div>
             </div>
             <hr>
