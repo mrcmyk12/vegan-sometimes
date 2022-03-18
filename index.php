@@ -60,6 +60,9 @@
 					huge difference.  Browse our Vegan recipes to begin your Vegan journey.
 				</p>
 			</div>
+			<div class="row">
+				<?php get_search_form(); ?>
+			</div>
 		</div>
 		<div class="col-md-6" style="margin-top: 50px">
 			<div
