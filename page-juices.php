@@ -4,7 +4,7 @@
 		<div style="background-color: #7cd6b6">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
-					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: #125B66; font-weight: 900">vegan-sometimes</h2></a>
+					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Jucie-Asset.png"></a>
 					<button
 						class="navbar-toggler"
 						type="button"

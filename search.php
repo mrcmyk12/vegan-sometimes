@@ -10,7 +10,7 @@ Template Name: Search Page
 		<div style="background-color: #EF80FA">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid" style="color: #ece6d4">
-					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: white; font-weight: 900">vegan-sometimes</h2></a>
+					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Asset-4.png" ></a>
 					<button
 						class="navbar-toggler"
 						type="button"

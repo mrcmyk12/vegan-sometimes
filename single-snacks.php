@@ -4,7 +4,7 @@
 		<div style="background-color: #FF52A3">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid" style="color: #ece6d4">
-					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><h2 style="color: #700045; font-weight: 900">vegan-sometimes</h2></a>
+					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Snack-Asset.png"></a>
 					<button
 						class="navbar-toggler"
 						type="button"
