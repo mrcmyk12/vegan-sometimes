@@ -53,10 +53,10 @@
 
 <div class="container">
 			<div class="row" style="margin-top: 15px">
-				<div class="col-7">
+				<div class="col-md-7">
 					<h1 style="font-weight: 900; font-size: 50px;  color:#7D5916; text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h1>
 				</div>
-				<div class="col-7">
+				<div class="col-md-7">
 					<div class="row" style="margin-top: 25px">
 						<div class="col">
 							<p class="Body-L" style="color: #7D5916"
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 			<div class="row" style="margin-top: 25px">
-				<div class="col-7">
+				<div class="col-md-7">
 					<div class="row">
 						<div class="col">
 							<h4  style="font-weight: 600; color: #7D5916"><?php the_field('ingredients_row_1') ?></h4>
@@ -92,7 +92,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-5">
+				<div class="col-md-5">
                     <?php the_post_thumbnail('titleImage'); ?>
 				</div>
 			</div>
