@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <body style="background-color: #ffffff">
 	<div style="background-color: #ffffff">
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav style="background:#ffffff; padding-top:25px" class="navbar fixed-top navbar-expand-lg navbar-light">
 			<div class="container-fluid" style="color: #ece6d4">
 				<a href="<?php echo site_url('/') ?>" class="navbar-brand"
 					><img
@@ -22,53 +22,62 @@
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link-blog"
+								href="<?php echo site_url('/blog') ?>"
+								><h2 style="text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Blog</b></h2></a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link-blog"
 								href="<?php echo site_url('/breakfast') ?>"
 								><h3>Breakfast</h3></a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="<?php echo site_url('/lunch') ?>"
+							<a class="nav-link-blog" href="<?php echo site_url('/lunch') ?>"
 								><h3>Lunch</h3></a
 							>
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link-blog"
 								href="<?php echo site_url('/dinner') ?>"
 								><h3>Dinner</h3></a
 							>
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link-blog"
 								href="<?php echo site_url('/snacks') ?>"
 								><h3>Snacks</h3></a
 							>
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link-blog"
 								href="<?php echo site_url('/juices') ?>"
 								><h3>Juices</h3></a
 							>
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link-blog"
 								href="<?php echo site_url('/smoothies') ?>"
 								><h3>Smoothies</h3></a
 							>
 						</li>
-						<li>
-							<?php get_search_form(); ?>
-						</li>
+                        <div style="background:#e300fa; padding:10px; border-radius:8px">
+							<li style="padding-top:10px">
+								<?php get_search_form(); ?>
+							</li>
+                        </div>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
-    <div class="container">
+    <div  class="container">
         <div style="margin-top:100px; margin-bottom:50px">
             <?php 
                 while(have_posts()){
@@ -105,4 +114,6 @@
                <?php } ?>
         
         </div>
+        <?php get_footer(); ?>
     </div>
+    </body>

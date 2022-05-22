@@ -2,7 +2,7 @@
     get_header();?>
     <body style="background-color: #F4AE2F">
 		<div style="background-color: #F4AE2F">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav style="background:#F4AE2F; padding-top:25px" class="navbar fixed-top navbar-expand-lg navbar-light">
 				<div class="container-fluid">
 					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Dinner-Asset.png"></a>
 					<button
@@ -22,6 +22,9 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
+								<a class="nav-link"  href="<?php echo site_url('/blog') ?>"><h3  style="color:#7D5916">Blog</h3></a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#7D5916">Breakfast</h3></a>
 							</li>
 							<li class="nav-item">
@@ -39,16 +42,16 @@
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h3 style="color:#7D5916">Smoothies</h3></a>
 							</li>
-							<li>
-							<?php get_search_form(); ?>
+							<li style="padding-top:10px">
+								<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
-        <div class="container">
-			<div class="row" style="margin-top: 30px">
+        <div style="margin-top:100px" class="container">
+			<div class="row" style="margin-top: 30px;">
 				<h1 style="color: #7D5916; font-weight: 900; font-size: 50px;  text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b><?php the_title(); ?><b></h1></b>
 
 				<h1 style="color: #7D5916; font-weight: 700">Recipe of the Day:</h1>
@@ -62,6 +65,7 @@
 
 	while($topRecipe -> have_posts()){
 		$topRecipe -> the_post();?>
+
 <div class="row">
 <div class="col">
 <h1 style="color: #7D5916; font-weight: 700;text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);">Recipe of the Day:</h1>

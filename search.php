@@ -28,6 +28,9 @@ Template Name: Search Page
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
+								<a class="nav-link" href="<?php echo site_url('/blog') ?>"><h4>Blog</h4></a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/breakfast') ?>"><h4>Breakfast</h4></a>
 							</li>
 							<li class="nav-item">
@@ -70,22 +73,27 @@ Template Name: Search Page
             $the_query -> the_post();
             ?>
             <div class="row">
-                <div class="col-md-4">
-					<a href="<?php the_permalink(); ?>" style="text-decoration: none">
-                    	<h1 style="font-weight: 700"><?php the_title(); ?></h1>
-					</a>
-                    <h4><?php the_field('description'); ?></h4>
-                </div>
-                <div class="col-md-4">
-                    <h3><?php the_field('ingredients_row_1'); ?></h3>
-                </div>
-                <div class="col-md-4">
-					<a href="<?php the_permalink(); ?>" style="text-decoration: none">
-                    	<?php the_post_thumbnail('cardImage') ?>
-					</a>
-                </div>
+				
+				<div class="homepage-card">
+					<div class="row">
+					<div class="col-md-4">
+						<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+							<h1 style="font-weight: 700"><?php the_title(); ?></h1>
+						</a>
+						<h4><?php the_field('description'); ?></h4>
+					</div>
+					<div class="col-md-4">
+						<h3><?php the_field('ingredients_row_1'); ?></h3>
+					</div>
+					<div class="col-md-4">
+						<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+							<?php the_post_thumbnail('cardImage') ?>
+						</a>
+					</div>
+				</div>
+			
             </div>
-            <hr>
+		</div>
       <?php  } 
     } else {
         ?>

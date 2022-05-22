@@ -2,7 +2,7 @@
     get_header();?>
     <body style="background-color: #CFE845">
 		<div style="background-color: #CFE845">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav style="background:#CFE845; padding-top:25px" class="navbar fixed-top navbar-expand-lg navbar-light">
 				<div class="container-fluid">
 					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Smmothies-Asset.png"></a>
 					<button
@@ -22,6 +22,12 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
+								<a class="nav-link"  href="<?php echo site_url('/blog') ?>"><h3  style="color:#4C5711">Blog</h3></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#4C5711">Breakfast</h3></a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#4C5711">Breakfast</h3></a>
 							</li>
 							<li class="nav-item">
@@ -39,15 +45,15 @@
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h2 style="color:#4C5711; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Smoothies</b></h2></a>
 							</li>
-							<li>
-							<?php get_search_form(); ?>
+							<li style="padding-top:10px">
+								<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
-        <div class="container">
+        <div style="margin-top:100px" class="container">
 			<div class="row" style="margin-top: 30px">
 				<h1 style="color: #4C5711; font-weight: 900; font-size: 50px;  text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b><?php the_title(); ?><b></h1></b>
 

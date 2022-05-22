@@ -2,8 +2,8 @@
     get_header();?>
     <body style="background-color: #CFE845">
 		<div style="background-color: #CFE845">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid" style="color: #ece6d4">
+		<nav style="background:#CFE845; padding-top:25px" class="navbar fixed-top navbar-expand-lg navbar-light">
+				<div class="container-fluid">
 					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Smmothies-Asset.png"></a>
 					<button
 						class="navbar-toggler"
@@ -22,13 +22,19 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3 style="color:#4C5711">Breakfast</h3></a>
+								<a class="nav-link"  href="<?php echo site_url('/blog') ?>"><h3  style="color:#4C5711">Blog</h3></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#4C5711">Breakfast</h3></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#4C5711">Breakfast</h3></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h3 style="color:#4C5711">Lunch</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3   style="color:#4C5711;">Dinner</h3></a>
+								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3 style="color:#4C5711">Dinner</h3></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h3 style="color:#4C5711">Snacks</h3></a>
@@ -37,10 +43,10 @@
 								<a class="nav-link" href="/juices"><h3 style="color:#4C5711">Juices</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h2 style="color:#4C5711; text-shadow: 8px 4px 4px rgba(0,0,0,0.15)"><b>Smoothies</b></h2></a>
+								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h2 style="color:#4C5711; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Smoothies</b></h2></a>
 							</li>
-							<li>
-							<?php get_search_form(); ?>
+							<li style="padding-top:10px">
+								<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>
@@ -51,7 +57,7 @@
     while(have_posts()){
         the_post(); ?>
 
-<div class="container">
+<div style="margin-top:100px" class="container">
 <div class="smoothie-card">
 				<div class="row" style="margin-top: 15px">
 					<div class="col-lg-7">

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <body style="background-color: #ef80fa">
 	<div style="background-color: #ef80fa">
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav style="background: #ef80fa; padding-top: 25px" class="navbar fixed-top navbar-expand-lg navbar-light">
 			<div class="container-fluid" style="color: #ece6d4">
 				<a href="<?php echo site_url('/') ?>" class="navbar-brand"
 					><img
@@ -20,6 +20,13 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="<?php echo site_url('/blog') ?>"
+								><h3>Blog</h3></a
+							>
+						</li>
 						<li class="nav-item">
 							<a
 								class="nav-link"
@@ -60,16 +67,18 @@
 								><h3>Smoothies</h3></a
 							>
 						</li>
-						<li>
+						
+						<li style="padding-top:10px">
 							<?php get_search_form(); ?>
 						</li>
+						
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
 
-	<div class="container">
+	<div class="container" style="margin-top:100px">
 		<div class="row">
 			<div class="homepage-card" style="padding: 25px 45px 50px 50px">
 				<div class="row">
@@ -104,10 +113,11 @@
 						style="
 							background: #ffffff;
 							box-shadow: 12px 12px 24px #d975e3,
-								inset 4px 4px 8px #fce8fe, inset -8px -8px 16px #ef80fa;
+							inset 4px 4px 8px #fce8fe, inset -8px -8px 16px #ef80fa;
 							border-radius: 12px;
 							width: fit-content;
 							margin-left: 35%;
+							padding:10px
 						"
 					>
 						<?php get_search_form(); ?>

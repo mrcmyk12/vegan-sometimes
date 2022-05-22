@@ -749,6 +749,17 @@ h6 {
 
 .nav-link :hover {
 	color: white;
+	font-weight:600;
+}
+.nav-link-blog :hover{
+	color:black;
+	font-weight: 600;
+}
+.nav-link-blog{
+	text-decoration: none;
+	display: block;
+	padding:0.5rem 1rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 .Nav-Search {

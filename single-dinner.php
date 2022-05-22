@@ -2,8 +2,8 @@
     get_header();?>
     <body style="background-color: #F4AE2F">
 		<div style="background-color: #F4AE2F">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid" style="color: #ece6d4">
+		<nav style="background:#F4AE2F; padding-top:25px" class="navbar fixed-top navbar-expand-lg navbar-light">
+				<div class="container-fluid">
 					<a href='<?php echo site_url('/') ?>' class="navbar-brand"><img src="https://vegan-sometimes.com/wp-content/uploads/2022/03/Dinner-Asset.png"></a>
 					<button
 						class="navbar-toggler"
@@ -22,13 +22,16 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3 style="color:#7D5916">Breakfast</h3></a>
+								<a class="nav-link"  href="<?php echo site_url('/blog') ?>"><h3  style="color:#7D5916">Blog</h3></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#7D5916">Breakfast</h3></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h3 style="color:#7D5916">Lunch</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h2   style="color:#7D5916; text-shadow: 8px 4px 4px rgba(0,0,0,0.15)"><b>Dinner</b></h2></a>
+								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h2 style="color:#7D5916; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Dinner</b></h2></a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h3 style="color:#7D5916">Snacks</h3></a>
@@ -39,8 +42,8 @@
 							<li class="nav-item">
 								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h3 style="color:#7D5916">Smoothies</h3></a>
 							</li>
-							<li>
-									<?php get_search_form(); ?>
+							<li style="padding-top:10px">
+								<?php get_search_form(); ?>
 							</li>
 						</ul>
 					</div>
@@ -51,7 +54,7 @@
     while(have_posts()){
         the_post(); ?>
 
-<div class="container">
+<div style="margin-top:100px" class="container">
 <div class="dinner-card">
 				<div class="row" style="margin-top: 15px">
 					<div class="col-lg-7">

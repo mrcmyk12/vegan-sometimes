@@ -22,6 +22,6 @@
 	<input 
 		type="submit" 
 		value="Search" 
-		style="background: none; border: none; color: white"/>
+		style="background: none; border: none; color: black; font-family: Fredoka"/>
 
 </form>
