@@ -22,22 +22,22 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h4  style="color:#125B66">Breakfast</h4></a>
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#125B66">Breakfast</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h4 style="color:#125B66">Lunch</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h3 style="color:#125B66">Lunch</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h4 style="color:#125B66">Dinner</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3 style="color:#125B66">Dinner</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4 style="color:#125B66">Snacks</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h3 style="color:#125B66">Snacks</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/juices"><h3 style="color:#125B66; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Juices</b></h3></a>
+								<a class="nav-link" href="/juices"><h2 style="color:#125B66; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Juices</b></h2></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#125B66">Smoothies</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h3 style="color:#125B66">Smoothies</h3></a>
 							</li>
 							<li>
 								<?php get_search_form(); ?>
@@ -51,34 +51,35 @@
 			<div class="row" style="margin-top: 30px">
 				<h1 style="color: #125B66; font-weight: 900; font-size: 50px;  text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b><?php the_title(); ?><b></h1></b>
 
-				<h1 style="color: #125B66; font-weight: 700">Recipe of the Day:</h1>
-            <?php 
-                $topRecipe = new WP_Query(array(
-                   'posts_per_page' => 1,
-                    'post_type' => 'juices',
-                    'orderby' => 'rand'
-                ));
+				<div class="juice-card">
+<?php 
+	$topRecipe = new WP_Query(array(
+	   'posts_per_page' => 1,
+		'post_type' => 'juices',
+		'orderby' => 'rand'
+	));
 
-                while($topRecipe -> have_posts()){
-                    $topRecipe -> the_post();?>
+	while($topRecipe -> have_posts()){
+		$topRecipe -> the_post();?>
+<div class="row">
+<div class="col">
+<h1 style="color: #125B66; font-weight: 700;text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);">Recipe of the Day:</h1>
+<h2 style="color: #125B66;text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h2>
 
-<h2 style="color: #125B66"><?php the_title(); ?></h2>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h3 style="color: #125B66"><?php the_field('ingredients_row_1') ?></h3>
-                    <a href="<?php the_permalink(); ?>"><button type="button" style="margin-top: 25px; margin-bottom: 25px" class="Button-Primary-L-Juice">View Recipe</button></a>
-				</div>
-                <div class="col-md-6">
-                    <?php the_post_thumbnail('titleImage'); ?>
-                </div>
 
-               <?php } wp_reset_postdata();
-            ?>
+	
+		<h3 style="color: #125B66"><?php the_field('ingredients_row_1') ?></h3>
+		<a style="text-decoration:none" href="<?php the_permalink(); ?>"><button type="button" class="Button-Primary-L-Juice">View Recipe</button></a>
+	</div>  
+	<div class="col">    
+				
+		<?php the_post_thumbnail('titleImage'); ?>
 
-			
-			</div>
-            <hr>
+   <?php } wp_reset_postdata();
+?>
+	</div>
+	</div>
+</div>
 
             <?php 
                 $lunchPosts = new WP_Query(array(
@@ -88,11 +89,12 @@
 
                 while($lunchPosts -> have_posts()){
                     $lunchPosts -> the_post(); ?>
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-md-4">
+            <div style="margin-bottom:25px" class="juice-card">
+            <div class="row" >
+                <div class="col-lg-4">
                     <?php the_post_thumbnail('cardImage'); ?>
                 </div>
-                <div class="col-md-5">
+                <div class="col-lg-5">
                     <div class="row">
                         <h2 style="color: #125B66; font-weight: 600"><?php the_title(); ?></h2>
                     </div>
@@ -100,11 +102,11 @@
                        <h4 style="color: #125B66"><?php the_field('ingredients_row_1') ?></h4>
                     </div>
                 </div>
-                <div class="col-md-3" style="align-items: start;">
-                    <a href="<?php the_permalink(); ?>"><button class="Button-Primary-L-Juice"> View Recipe</button></a>
+                <div class="col-lg-3" style="align-items: start;">
+                    <a style="text-decoration:none" href="<?php the_permalink(); ?>"><button class="Button-Primary-L-Juice"> View Recipe</button></a>
                 </div>
             </div>
-            <hr>
+				</div>
               <?php  } get_footer();
             ?>
             

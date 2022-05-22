@@ -9,7 +9,7 @@
 			class="search-field"
 			name="s"
 			style="border-radius: 8px; border: none; width: 250px"
-			placeholder="Search Our Recipes"
+			placeholder="Search Blogs or Recipes"
 			value="<?php echo get_search_query(); ?>"
 		/>
 		<input type="hidden" name="post_type[]" value="breakfast" />
@@ -22,6 +22,6 @@
 	<input 
 		type="submit" 
 		value="Search" 
-		style="background: none; border-radius: 5px"/>
+		style="background: none; border: none; color: white"/>
 
 </form>

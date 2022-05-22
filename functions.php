@@ -75,6 +75,17 @@ function vegan_post_types(){
             'all_items' => 'All Juice Recipes'
         )
     ));
+    register_post_type('blog', array(
+        'supports' => array('editor','thumbnail','title'),
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Blog Posts',
+            'add_new_item' => 'Add New Blog Post',
+            'edit_item' => 'Add New Blog Post',
+            'all_items' => 'All Blog Posts'
+        )
+    ));
     register_post_type('smoothies', array(
         'supports' => array('editor','thumbnail','title'),
         'public' => true,
@@ -86,7 +97,28 @@ function vegan_post_types(){
             'all_items' => 'All Smoothie Recipes' 
         )
     ));
-
+    register_post_type('featured', array(
+        'supports' => array('editor','thumbnail','title','tags'),
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Featured',
+            'add_new_item' => 'Add Feature',
+            'edit_item' => 'Edit Feature',
+            'all_items' => 'All Featured Articles' 
+        )
+    ));
 }
 
 add_action('init', 'vegan_post_types');
+
+function gp_register_taxonomy_for_object_type() {
+    register_taxonomy_for_object_type( 'post_tag', 'breakfast');
+    register_taxonomy_for_object_type( 'post_tag', 'lunch');
+    register_taxonomy_for_object_type( 'post_tag', 'dinner');
+    register_taxonomy_for_object_type( 'post_tag', 'smoothies');
+    register_taxonomy_for_object_type( 'post_tag', 'juices');
+    register_taxonomy_for_object_type( 'post_tag', 'snacks');
+    };
+
+add_action( 'init', 'gp_register_taxonomy_for_object_type' );

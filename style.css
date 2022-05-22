@@ -4,6 +4,11 @@ Author: Philip Sanders
 Version: 1.0
 */
 
+element{
+	--breakfast-main-color:#F0E66B;
+	--breakfast-secondary-color:#706B32;
+}
+
 .Button-Primary-S {
 	/* Button-Primary-S */
 
@@ -138,167 +143,168 @@ box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
 	flex-grow: 0;
 	margin: 0px 10px;
 }
-.Button-Primary-L-Breakfast {
-	/* Button-Primary-L */
-box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
-
-
-	/* Auto layout */
-	padding: 6px 10px;
-	width: 182px;
-	height: 44px;
-	background: #706B32;
-	border-radius: 18px;
-
-	/* Call To Action */
+.Button-Primary-L-Homepage{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+	gap: 10px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 8px #85468B, inset 1px 1px 2px #FCE6FE, inset -3px -3px 8px #EF80FA;
+	border-radius: 10px;
 	font-family: 'Fredoka';
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 29px;
+	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
-
+	color: #85468B;
 	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 10px;
+}
+.Button-Primary-L-Breakfast {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 6px 14px;
+gap: 10px;
+border: none;
+background: #FFFFFF;
+box-shadow: 4px 4px 8px #706B32, inset 1px 1px 2px #faf4ae, inset -3px -3px 8px #F0E66B;
+border-radius: 10px;
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+color: #706B32;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 .Button-Primary-L-Lunch {
-	/* Button-Primary-L */
-box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
-
-
-	/* Auto layout */
-	padding: 6px 10px;
-	width: 182px;
-	height: 44px;
-	background: #3B1349;
-	border-radius: 18px;
-
-	/* Call To Action */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+	gap: 10px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 8px #200a28, inset 1px 1px 2px #b7a3be, inset -3px -3px 8px #3B1349;
+	border-radius: 10px;
 	font-family: 'Fredoka';
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 29px;
+	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
-
+	color: #200a28;
 	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 10px;
+	
 }
 .Button-Primary-L-Dinner {
-	/* Button-Primary-L */
-box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
-
-
-	/* Auto layout */
-	padding: 6px 10px;
-	width: 182px;
-	height: 44px;
-	background: #7D5916;
-	border-radius: 18px;
-
-	/* Call To Action */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+	gap: 10px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 8px #7D5916, inset 1px 1px 2px #f0cc8b, inset -3px -3px 8px #F4AE2F;
+	border-radius: 10px;
 	font-family: 'Fredoka';
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 29px;
+	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
-
+	color: #7D5916;
 	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 10px;
 }
 .Button-Primary-L-Snack {
-	/* Button-Primary-L */
-box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
-
-
-	/* Auto layout */
-	padding: 6px 10px;
-	width: 182px;
-	height: 44px;
-	background: #700045;
-	border-radius: 18px;
-
-	/* Call To Action */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+	gap: 10px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 8px #700045, inset 1px 1px 2px #ff9fcc, inset -3px -3px 8px #FF52A3;
+	border-radius: 10px;
 	font-family: 'Fredoka';
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 29px;
+	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
-
+	color: #700045;
 	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 10px;
 }
 .Button-Primary-L-Juice {
-	/* Button-Primary-L */
-box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
-
-
-	/* Auto layout */
-	padding: 6px 10px;
-	width: 182px;
-	height: 44px;
-	background: #125B66;
-	border-radius: 18px;
-
-	/* Call To Action */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+	gap: 10px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 8px #125B66, inset 1px 1px 2px #a6d3c3, inset -3px -3px 8px #7cd6b6;
+	border-radius: 10px;
 	font-family: 'Fredoka';
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 29px;
+	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
-
+	color: #125B66;
 	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 10px;
 }
 .Button-Primary-L-Smoothie {
-	/* Button-Primary-L */
-box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
-
-
-	/* Auto layout */
-	padding: 6px 10px;
-	width: 182px;
-	height: 44px;
-	background: #4C5711;
-	border-radius: 18px;
-
-	/* Call To Action */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 6px 14px;
+	gap: 10px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 8px #4C5711, inset 1px 1px 2px #d9e789, inset -4px -4px 8px #CFE845;
+	border-radius: 10px;
 	font-family: 'Fredoka';
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 29px;
+	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
-
+	color: #4C5711;
 	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 10px;
 }
 
 .Button-Primary-XL {
@@ -528,6 +534,11 @@ h1 {
 	font-weight: normal;
 	font-size: 32px;
 	line-height: 43px;
+}
+
+p{
+	font-family: "Fredoka";
+	font-weight:500
 }
 
 h2 {
@@ -855,4 +866,83 @@ hr{
 	font-weight: 300;
 	outline: none;
 	color: #6E2375;
+}
+
+.homepage-card{
+margin-top: 50px;
+width: 95%;
+background: #FFFFFF;
+box-shadow: 15px 15px 30px #85468B, inset 8px 8px 16px #FCE6FE, inset -15px -15px 30px #EF80FA;
+border-radius: 50px;
+padding: 25px;
+}
+
+.breakfast-card{
+	margin-top: 50px;
+width: 95%;
+background: #FFFFFF;
+border-radius: 50px;
+padding: 50px;
+box-shadow: 20px 20px 40px #7D7837, inset 15px 15px 30px #F8F4C8, inset -15px -15px 30px #F0E66B;
+border-radius: 100px;
+}
+
+.lunch-card{
+	margin-top: 50px;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 50px;
+	padding: 50px;
+	box-shadow: 20px 20px 40px #200a28, inset 15px 15px 30px #b7a3be, inset -15px -15px 30px #3B1349;
+	border-radius: 100px;
+}
+
+.dinner-card{
+	margin-top: 50px;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 50px;
+	padding: 50px;
+	box-shadow: 20px 20px 40px #3B1349, inset 15px 15px 30px #f0cc8b, inset -15px -15px 30px #F4AE2F;
+	border-radius: 100px;
+}
+
+.snack-card{
+	margin-top: 50px;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 50px;
+	padding: 50px;
+	box-shadow: 20px 20px 40px #700045, inset 15px 15px 30px #ff9fcc, inset -15px -15px 30px #FF52A3;
+	border-radius: 100px;
+}
+
+.smoothie-card{
+	margin-top: 50px;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 50px;
+	padding: 50px;
+	box-shadow: 20px 20px 40px #4C5711, inset 15px 15px 30px #d9e789, inset -15px -15px 30px #CFE845;
+	border-radius: 100px;
+}
+
+.juice-card{
+	margin-top: 50px;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 50px;
+	padding: 50px;
+	box-shadow: 20px 20px 40px #125B66, inset 15px 15px 30px #a6d3c3, inset -15px -15px 30px #7cd6b6;
+	border-radius: 100px;
+}
+
+.blog-card{
+	margin-top: 50px;
+	width: 95%;
+	background: #FFFFFF;
+	border-radius: 50px;
+	padding: 50px;
+	box-shadow: 20px 20px 40px #000000, inset 15px 15px 30px #e1dbdb, inset -15px -15px 30px #FFFFFF;
+	border-radius: 100px;
 }

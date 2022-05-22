@@ -22,22 +22,22 @@
 					>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h4  style="color:#3B1349">Breakfast</h4></a>
+								<a class="nav-link"  href="<?php echo site_url('/breakfast') ?>"><h3  style="color:#3B1349">Breakfast</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h3 style="color:#3B1349; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Lunch</b></h3></a>
+								<a class="nav-link" href="<?php echo site_url('/lunch') ?>"><h2 style="color:#3B1349; text-shadow: 8px 4px 4px rgba(0,0,0,0.25)"><b>Lunch</b></h2></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h4 style="color:#3B1349">Dinner</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/dinner') ?>"><h3 style="color:#3B1349">Dinner</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h4 style="color:#3B1349">Snacks</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/snacks') ?>"><h3 style="color:#3B1349">Snacks</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/juices"><h4 style="color:#3B1349">Juices</h4></a>
+								<a class="nav-link" href="/juices"><h3 style="color:#3B1349">Juices</h3></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h4 style="color:#3B1349">Smoothies</h4></a>
+								<a class="nav-link" href="<?php echo site_url('/smoothies') ?>"><h3 style="color:#3B1349">Smoothies</h3></a>
 							</li>
 							<li>
 							<?php get_search_form(); ?>
@@ -52,57 +52,61 @@
         the_post(); ?>
 
 <div class="container">
-			<div class="row" style="margin-top: 15px">
-				<div class="col-md-7">
-					<h1 style="font-weight: 900; font-size: 50px;  color:#3B1349; text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h1>
-				</div>
-				<div class="col-md-7">
-					<div class="row" style="margin-top: 25px">
-						<div class="col">
-							<p class="Body-L" style="color: #3B1349"
-								><b>Prep: <?php the_field('prep_time') ?></b></p
-							>
+<div class="lunch-card">
+				<div class="row" style="margin-top: 15px">
+					<div class="col-lg-7">
+						<h1 style="font-weight: 900; font-size: 50px;  color:#3B1349; text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);"><?php the_title(); ?></h1>
+					</div>
+					<div class="col-lg-7">
+						<div class="row" style="margin-top: 25px">
+							<div class="col">
+								<p class="Body-L" style="color: #3B1349"
+									><b>Prep: <?php the_field('prep_time') ?></b></p
+								>
+							</div>
+							<div class="col">
+								<p class="Body-L" style="color: #3B1349"
+									><b>Cook: <?php the_field('cook_time') ?></b></p
+								>
+							</div>
+							<div class="col">
+								<p class="Body-L" style="color: #3B1349"
+									><b>Total: <?php the_field('total_time') ?></b></p
+								>
+							</div>
+							<div class="col">
+								<p class="Body-L" style="color: #3B1349"
+									><b>Servings: <?php the_field('servings') ?></b></p
+								>
+							</div>
 						</div>
-						<div class="col">
-							<p class="Body-L" style="color: #3B1349"
-								><b>Cook: <?php the_field('cook_time') ?></b></p
-							>
+					</div>
+				
+					<div class="col-lg-7">
+						<div class="row">
+							<div class="col">
+								<h4  style="font-weight: 600; color: #3B1349"><?php the_field('ingredients_row_1') ?></h4>
+							</div>
+							<div class="col">
+							<h4  style="font-weight: 600; color: #3B1349"><?php the_field('ingredients_row_2') ?></h4>
+							</div>
 						</div>
-						<div class="col">
-							<p class="Body-L" style="color: #3B1349"
-								><b>Total: <?php the_field('total_time') ?></b></p
-							>
-						</div>
-						<div class="col">
-							<p class="Body-L" style="color: #3B1349"
-								><b>Servings: <?php the_field('servings') ?></b></p
-							>
-						</div>
+					</div>
+					<div class="col-lg-5">
+						<?php the_post_thumbnail('titleImage'); ?>
 					</div>
 				</div>
 			</div>
-			<div class="row" style="margin-top: 25px">
-				<div class="col-md-7">
-					<div class="row">
-						<div class="col">
-							<h4  style="font-weight: 600; color: #3B1349"><?php the_field('ingredients_row_1') ?></h4>
-						</div>
-						<div class="col">
-                        <h4  style="font-weight: 600; color: #3B1349"><?php the_field('ingredients_row_2') ?></h4>
-						</div>
-					</div>
+		
+			<div class="lunch-card">
+				<div class="row" style="margin-bottom: 15px">
+					<h2 style="font-weight: 800; color: #3B1349">Instructions</h2>
 				</div>
-				<div class="col-md-5">
-                    <?php the_post_thumbnail('titleImage'); ?>
+				<div class="row"  style="margin-bottom: 30px; margin-left: 15px; margin-right: 20px">
+					<h3 style="font-weight: 500; color: #3B1349"><?php the_field('instructions') ?></h3>
 				</div>
 			</div>
-			<div class="row" style="margin-bottom: 15px">
-				<h2 style="font-weight: 800; color: #3B1349">Instructions</h2>
-			</div>
-			<div class="row"  style="margin-bottom: 30px; margin-left: 15px; margin-right: 20px">
-				<h3 style="font-weight: 500; color: #3B1349"><?php the_field('instructions') ?></h3>
-			</div>
-			<div class="row" style="margin-bottom: 50px; margin-top: 30px;">
+			<div class="row" style="margin-top: 50px;">
 				<h2 style="font-weight: 800; color: #3B1349; font-size: 50px;">Related Recipes</h2>
 			</div>
             <div class="row" style="margin-bottom: 20px">
@@ -115,27 +119,28 @@
                 while($latestRecipes -> have_posts()){
                     $latestRecipes -> the_post(  );
                     ?>
-                	<div class="row" style="margin-bottom: 20px;">
-					<div class="col-md-4">
-						<div class="row">
-							<a href="<?php the_permalink(); ?>" style="text-decoration: none">
-								<h1 style="font-weight: 700; color: #3B1349"><?php the_title(); ?></h1>
-							</a>
+                	<div class="col-lg-6">
+					<div class="lunch-card">	
+						<div class="row" style="margin-bottom: 20px;">
+							
+								<div class="row">
+									<a href="<?php the_permalink(); ?>" style="text-decoration: none">
+										<h1 style="font-weight: 700; color: #3B1349"><?php the_title(); ?></h1>
+									</a>
+								</div>
+								<div class="row">
+									<div class="col">
+										<h4 style="color: #3B1349"><?php the_field('description'); ?></h4>
+									</div>
+							<div class="col">
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('cardImage'); ?>
+								</a>
+							</div>
+				</div>
 						</div>
-						<div class="row">
-							<h4 style="color: #3B1349"><?php the_field('description'); ?></h4>
-						</div>	
-					</div>
-					<div class="col-md-4">
-						<h3 style="color: #3B1349"><?php the_field('ingredients_row_1'); ?></h3>
-					</div>
-					<div class="col-md-4">
-						<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail('cardImage'); ?>
-						</a>
 					</div>
 				</div>
-				<hr>
                <?php }
             ?>
 		</div>
